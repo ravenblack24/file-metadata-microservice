@@ -41,16 +41,14 @@ header {
     padding-bottom: 2.4em;
 }
 
-.section__container__content,
-label {
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-input {
-    padding: .25em;
+.section__container__form input {
+    display: block;
+    width: 300px;
+    margin: 0 auto 1em;
+    padding: .5em;
     font-size: 1.25rem;
     margin-bottom: .5em;
+    background-color: white;
 }
 
 button {
@@ -84,33 +82,6 @@ button {
 
 .section__container__stories li:last-of-type {
 	padding-bottom: 0;
-}
-
-.section__container__stories code {
-    background-color: white;
-}
-
-.section__container__usage {
-	list-style-type: none;
-	font-size: 1.5rem;
-	margin:0;
-	padding:0;
-}
-
-.section__container__usage li {
-	padding-bottom: 1em;
-}
-
-.section__container__usage li:last-of-type {
-	padding-bottom: 0;
-}
-
-.section__container__content__link {
-    color: inherit;
-}
-
-.section__container__content__link:hover {
-    font-style:italic
 }
 
 .section__container__spacer {
