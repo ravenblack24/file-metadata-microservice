@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname+"/views/index.html");
 });
 
-app.post("/upload", (req, res) => {
+app.post("/api/fileanalyse", (req, res) => {
     getFileMetadata(req, res);
 });
 
