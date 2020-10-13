@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File metadata microservice - express.js, node.js, mongoose.js & mongodb</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+   <body>
+      <header class="header">
+        <div class="header__container">
+            <h1 class="header__container__title">API Project:<span class="header__container__title--strong">File metadata microservice</span></h1>
+        </div>
+      </header>
+      <section>
+        <div class="section__container">
+            <h2 class="section__container__title section__container__spacer">File upload</h2>
+            <form action="/upload" method="POST" id="uploadForm" enctype='multipart/form-data'>
+                <input type="file" id="myFile" name="fileUpload">
+                <button>Upload</button>
+            </form>
+            <h2 class="section__container__title">User Stories</h2>
+            <ol class="section__container__stories">
+              <li>I can submit a form that includes a file upload.</li>
+              <li>The form file input field has the name attribute set to upfile.</li>
+              <li>When I submit something, I will receive the file name, type, and size in bytes within the JSON response.</li>
+            </ol>
+            <h2 class="section__container__title section__container__spacer">example output</h2>
+            <p class="section__container__content section__container__code"><code>{"name":"picture.png", "type":"image/png", "size":19728}</code></p>
+        </div>
+      </section>
+   </body>
+
+</html>
