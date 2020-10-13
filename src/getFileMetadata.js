@@ -3,7 +3,7 @@ const getFileMetadata = (req, res) => {
         return res.json({"error": "No file uploaded"});
     }
 
-    const file = req.files.fileUpload;
+    const file = req.files.upfile;
     return res.json({"name": file.name,
                      "type": file.mimetype,
                      "size": file.size})
